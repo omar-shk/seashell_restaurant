@@ -1,0 +1,197 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homePage
+{
+    background-image: linear-gradient(rgb(0 34 122 / 65%), rgb(0 0 0 / 65%)), url(/images/2.jpg);
+    /* background-image: url(/images/1.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    /* height: 10000px; */
+}
+
+.logo img
+{
+    width: 120px;
+    filter: invert(1);
+}
+
+.nav ul
+{
+    position: fixed;
+    filter: opacity(90%);
+    display: flex;
+    background-color: rgb(21, 21, 21);
+    background-image: radial-gradient(rgb(0 34 122 / 65%), rgb(0 0 0 / 65%));
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    z-index: 100;
+    transition: .2s linear;
+}
+
+.nav ul:hover
+{
+    /* position: fixed; */
+    filter: opacity(100%);
+    background-color: black;
+}
+
+.nav ul li a
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav ul li a:hover
+{
+    color: #bcdaff;
+
+}
+
+.nav ul li button
+{
+    color: white;
+    font-weight: 500;
+    border: 4px solid #000096;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2px 15px;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav ul li button:hover
+{
+    background-color: #000096;    
+}
+
+.heading
+{
+  display: flex;
+  height: 45vh;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.heading p
+{
+  color: white;
+  font-size: 70px;
+}
+
+.formContainer
+{ 
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+  margin-top: -86px;
+  width: fit-content;
+  padding: 10px;
+  background-image: linear(rgb(0 34 122 / 55%), rgb(0 0 0 / 55%));
+}
+
+.formContainer div
+{
+  margin: 5px;
+  padding: 5px;
+}
+
+.text input, .text textarea
+{
+  padding: 5px 5px;
+  width: 25vw;
+}
+
+.text textarea
+{
+  height: 15vh;
+}
+
+select, .person input
+{
+  width: 22vh;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+button
+{
+  width: 25vh;
+  padding: 5px 5px;
+  margin: 5px 0px 0px 100px
+}
+
+
+#successMessage
+{
+  width: fit-content;
+  margin: auto;
+  animation: addBackgroud 2s ease forwards;
+  animation: blurToClear 1s ease forwards;
+
+}
+
+#successMessage p
+{
+  color: white;
+  font-size: 50px;
+  /* animation: changeColour 2s ease forwards; */
+  padding: 15px 20px;
+  
+}
+
+@keyframes blurToClear
+{
+    0%
+    {
+        filter: blur(9px);
+        transform: scale(0.9);
+    }
+    100%
+    {
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+@keyframes addBackground
+{
+    0%
+    {
+        background-color: transparent;
+    }
+    100%
+    {
+        background-color: white;
+    }
+}
+
+@keyframes changeColour
+{
+    0%
+    {
+        color: white;
+    }
+    100%
+    {
+        color: green;
+    }
+}
