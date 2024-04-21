@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="/images/logo/logo_circle.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/reservation.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seashell Reservation</title>
+</head>
+<body>
+  <div class="homePage" id="homePage">
+    <header>
+        <div class="nav">
+            <ul>
+                <li><div class="logo">
+                    <img src="/images/logo/logo_no_background.png" alt="">
+                </div></li>
+                <li><a href="index.html#homePage">Home</a></li>
+                <li><a href="/index.html#gap1">About Us</a></li>
+                <li><a href="/index.html#gap2">Menu</a></li>
+                <li><a href="/index.html#gap3">Services</a></li>
+                <li><a href="/index.html#gap4">Gallery</a></li>
+                <!-- <li><button>Reserve Now</button></li> -->
+            </ul>
+        </div>
+    </header>
+
+    <div class="heading">
+      <p>Online Reservation</p>
+    </div>
+
+    <div class="formContainer" id="formContainer">
+      <form action="" onsubmit="return submittingForm()">
+        <div class="name text">
+          <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+        </div>
+        
+        <div class="tel text">
+          <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+        </div>
+    
+        <div class="person">
+          <select name="person" class="input-field">
+            <option value="1-person">1 Person</option>
+            <option value="2-person">2 Person</option>
+            <option value="3-person">3 Person</option>
+            <option value="4-person">4 Person</option>
+            <option value="5-person">5 Person</option>
+            <option value="6-person">6 Person</option>
+            <option value="7-person">7 Person</option>
+          </select>
+          <input type="date" name="reservation-date" class="input-field">
+        </div>
+    
+        <div class="meal">
+          <select name="meal" class="input-field" aria-placeholder="Select Meal">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </div>
+    
+        <div class="message text">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+    
+        <button type="submit">Book A Table</button>
+      </form>
+    </div>
+    
+    <div class="successMessage" id="successMessage" style="display: none;">
+      <p>Table Booked</p>
+    </div>
+  </div>
+  <script src="js/reservation.js"></script>
+
+</body>
+
+</html>
